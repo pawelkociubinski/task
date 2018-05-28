@@ -1,0 +1,20 @@
+[ignore]
+
+[include]
+
+[libs]
+./flow-typed
+
+[lints]
+
+[options]
+module.name_mapper='^actions\/\(.*\)$' -> '<PROJECT_ROOT>/src/actions/\1'
+module.name_mapper='^atoms\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/atoms/\1'
+module.name_mapper='^molecules\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/molecules/\1'
+module.name_mapper='^organisms\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/organisms/\1'
+module.name_mapper='^templates\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/templates/\1'
+module.name_mapper='^containers\/\(.*\)$' -> '<PROJECT_ROOT>/src/containers/\1'
+module.name_mapper='^helpers\/\(.*\)$' -> '<PROJECT_ROOT>/src/helpers/\1'
+module.name_mapper='^types\/\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
+module.name_mapper='^constants\/\(.*\)$' -> '<PROJECT_ROOT>/src/constants/\1'
+[strict]
